@@ -4,6 +4,22 @@ function change(){
     var ssc = document.getElementById("secondc").value;
     var ffr = document.getElementById("firstr").value;
     var ssr = document.getElementById("secondr").value;
+    if(ffc<1 || ffc>4){
+        window.alert("Invalid column starting line");
+        return;
+    }
+    if(ssc<1 || ssc>4){
+        window.alert("Invalid column ending line");
+        return;
+    }
+    if(ffr<1 || ffr>8){
+        window.alert("Invalid row starting line");
+        return;
+    }
+    if(ssr<1 || ssr>4){
+        window.alert("Invalid row ending line");
+        return;
+    }
     if(inp == '1'){
         console.log("Reached inside one");
         document.getElementById("one").style.gridColumnStart = ffc;
